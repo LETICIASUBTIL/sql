@@ -1,0 +1,16 @@
+CREATE TABLE atividades_economicas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo_cnae VARCHAR(7), -- usualmente o CNAE é um código de 7 caracteres
+    atividade TEXT,
+    localizacao_pontos_id INT,
+    FOREIGN KEY (localizacao_pontos_id) REFERENCES localizacao_pontos(id)
+    -- Define a chave estrangeira localizacao_pontos_id que referencia a tabela 'localizacao_pontos'
+);
+
+-- Quando for inserir dados na tabela atividades, você precisa antes inserir o id da localizacao existente.
+INSERT INTO atividades_cane (id,codigo_cnae, atividade, localizacao_pontos_id) 
+VALUES (29,'1113502', 'Fabricação de cervejas e chopes', 9);
+
+-- Quando for inserir dados na tabela atividades, você precisa antes inserir o id da localizacao existente.
+INSERT INTO atividades_cnae (id,codigo_cnae, atividade, localizacao_pontos_id) 
+VALUES (30,'1122401', 'Fabricação de refrigerantes', 9);
