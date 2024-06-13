@@ -1,0 +1,6 @@
+--selecionando os dados da tabela
+select * from localizacao_pontos;
+
+--inseir novo dados na tabela
+INSERT INTO localizacao_pontos (id, nome, cnpj, município, geom)
+VALUES (17,'DESTILADOS 163 LTDA','44535059000150', 'Sorriso', ST_GeomFromText('POINT(-55.7287 -12.5419)', 4326));
