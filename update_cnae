@@ -1,0 +1,17 @@
+Continuar atualizando a tabela ‘atividades_cnae’ do id 8
+Para os ids 26,27,28
+-- Atualizar cnae e atividade = para o registro com id 8
+UPDATE atividades_cnae
+SET codigo_cnae = '1113502' ,atividade = 'Fabricação de cervejas e chopes'
+WHERE id = 26;
+
+UPDATE atividades_cnae
+SET codigo_cnae = '1111902' ,atividade = 'Fabricação de outras aguardentes e bebidas destiladas'
+WHERE id = 27;
+
+UPDATE atividades_cnae
+SET codigo_cnae = '1112700' ,atividade = 'Fabricação de vinho'
+WHERE id = 28;
+
+select*from atividades_cnae;
+ 
