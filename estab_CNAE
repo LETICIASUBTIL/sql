@@ -1,0 +1,5 @@
+CREATE TABLE estab_CNAE (
+    Num_Estab INT,
+    Porcent_Estab DECIMAL(5,2),
+    subclasse_cnae VARCHAR(255)
+);
