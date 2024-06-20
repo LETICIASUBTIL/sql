@@ -1,0 +1,11 @@
+CREATE TABLE Arrec_ICMS_CNAE (
+  Subclasse VARCHAR(255),
+  Desc_SubClasse TEXT,
+  Arrec_reais DECIMAL(15, 2),
+  Porc_Total DECIMAL(5, 2)
+);
+
+
+COPY Arrec_ICMS_CNAE FROM 'C:\Arrec_ICMS_CNAE.csv' DELIMITER ';' CSV HEADER;
+
+SELECT * FROM Arrec_ICMS_CNAE;
