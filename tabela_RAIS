@@ -1,0 +1,14 @@
+ALTER TABLE IF EXISTS public.estab_mun_port
+    ADD COLUMN "Municipios" VARCHAR (255);
+ALTER TABLE IF EXISTS public.estab_mun_port
+    ADD COLUMN "NumeroEstabelecimentos" INT;
+ALTER TABLE IF EXISTS public.estab_mun_port
+    ADD COLUMN "Porte" VARCHAR (100);
+
+SELECT * FROM estab_mun_port;
+
+COPY estab_mun_port FROM 'C:\estab_mun_porte.csv' DELIMITER ',' CSV HEADER;
+
+#SE TIVER PROBLEMAS PARA IMPORTAR VERIFICAR SE FALTAM AS ASPAS NAS STRINGS
+# ATALHO PARA SELECIONAR E ADICIONAR ASPAS DUPLAS EM STRINGS NO VSCODE: (seleciona a palavra que quer adicionar aspas) CTRL+SHIT+L depois CTRL+D depois SHIFT+ "
+
